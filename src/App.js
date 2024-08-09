@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
+import Footer from "./footer/Footer";
 
 
 class App extends React.Component {
@@ -8,6 +9,8 @@ class App extends React.Component {
         return (
             <div className="app">
                 <Header data={dataHeader}/>
+                <Footer date={new Date()}/>
+
             </div>
         )
     }
@@ -15,7 +18,7 @@ class App extends React.Component {
 }
 
 const dataHeader = {
-    headerStyle : {
+    headerStyle: {
         backgroundColor: '#61DBFB',
         fontFamily: 'Helvetica Neue',
         padding: 25,
@@ -30,8 +33,6 @@ const dataHeader = {
     },
     date: new Date()
 }
-
-
 
 
 export default App;
